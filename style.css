@@ -1,15 +1,20 @@
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: "Gilroy";
     outline: none;
 }
 
 html,
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     overflow-x: hidden;
 }
 #heading {
@@ -23,7 +28,9 @@ body {
     font-weight: 400;
 }
 .add:active{
-    transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+            transform: scale(0.98);
 }
 
 /* Button CSS start*/
@@ -54,6 +61,8 @@ button.learn-more{
     height: auto;
 }
 button.learn-more .circle{
+    -webkit-transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
+    -o-transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
     transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
     position: relative;
     display: block;
@@ -69,6 +78,8 @@ button.learn-more .circle .icon{
     bottom: 0;
     margin: auto;
     background: #fff;
+    -webkit-transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
+    -o-transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
     transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
 }
 button.learn-more .circle .icon.arrow{
@@ -76,6 +87,8 @@ button.learn-more .circle .icon.arrow{
     width: 1.125rem;
     height: 0.125rem;
     background: none;
+    -webkit-transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
+    -o-transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
     transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
 }
 button.learn-more .circle .icon.arrow::before{
@@ -87,7 +100,9 @@ button.learn-more .circle .icon.arrow::before{
     height: 0.625rem;
     border-top: 0.125rem solid #fff;
     border-right: 0.125rem solid #fff;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 button.learn-more .button-text{
     position: absolute;
@@ -95,6 +110,8 @@ button.learn-more .button-text{
     bottom: 0;
     left: 0;
     right: 0;
+    -webkit-transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
+    -o-transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
     transition: all 0.45s cubic-bezier(0.65,0,0.076,1);
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
@@ -109,7 +126,9 @@ button:hover .circle{
 }
 button:hover .circle .icon.icon.arrow{
     background: #fff;
-    transform: translate(1rem, 0);
+    -webkit-transform: translate(1rem, 0);
+        -ms-transform: translate(1rem, 0);
+            transform: translate(1rem, 0);
 }
 button:hover .button-text{
     color: #fff;
@@ -123,15 +142,20 @@ button:hover .button-text{
     width: 400px;
     overflow-y: scroll;
     margin-top: 7rem;
-    box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.75);
+            box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.75);
     /* box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1),inset 0 -1px 0 rgba(0, 0, 0, 0.1); */
 }
 .note::-webkit-scrollbar{
     display: none;
 }
 .note .tools{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     padding: .5rem;
 }
 .note .tools button{
@@ -163,12 +187,14 @@ button:hover .button-text{
 .fa-edit:hover{
     background-color: #fff;
     color: #2ecc71;
-    filter: drop-shadow(0px 10px 8px rgb(219,218,218));
+    -webkit-filter: drop-shadow(0px 10px 8px rgb(219,218,218));
+            filter: drop-shadow(0px 10px 8px rgb(219,218,218));
 }
 .fa-trash-alt:hover{
     background-color: #fff;
     color: #e74c3c;
-    filter: drop-shadow(0px 10px 8px rgb(219,218,218));
+    -webkit-filter: drop-shadow(0px 10px 8px rgb(219,218,218));
+            filter: drop-shadow(0px 10px 8px rgb(219,218,218));
 }
 .content{
     padding: 20px;
